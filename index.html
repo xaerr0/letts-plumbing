@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Letts Plumbing, Concord, CA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Family-owned plumbing in Concord, CA since 1966. Water heater installs, repairs, and maintenance from a licensed local crew.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;0,700;1,400&family=Public+Sans:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;0,700;1,400&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;0,700;1,400&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+<style>
+  :root{
+    --paper:#EFEAD9;
+    --paper-dim:#E6DFC9;
+    --ink:#1E1B16;
+    --ink-soft:#524B3E;
+    --union:#1F3B54;
+    --union-dark:#152A3D;
+    --copper:#A8552E;
+    --copper-dark:#8A431F;
+    --brass:#C79A3A;
+    --line:rgba(30,27,22,0.16);
+    --line-strong:rgba(30,27,22,0.28);
+    --paper-rgb:239,234,217;
+    --panel:#1F3B54;
+    --panel-dark:#152A3D;
+    --cta:#A8552E;
+    --cta-dark:#7A3A1D;
+  }
+  [data-theme="dark"]{
+    --paper:#171512;
+    --paper-dim:#1E1B16;
+    --ink:#EFEAD9;
+    --ink-soft:#C6BFAC;
+    --union:#7FA8C9;
+    --union-dark:#9FC1DE;
+    --copper:#D98354;
+    --copper-dark:#E89A6D;
+    --brass:#E0B65C;
+    --line:rgba(239,234,217,0.16);
+    --line-strong:rgba(239,234,217,0.28);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+  ::selection{background:var(--copper);color:#FAF6EC;}
+  body{
+    margin:0;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"),
+      var(--paper);
+    color:var(--ink);
+    font-family:'Public Sans', system-ui, sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    font-variant-numeric:oldstyle-nums;
+  }
+  h1,h2,h3{
+    font-family:'Bitter', Georgia, serif;
+    font-weight:700;
+    line-height:1.08;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:var(--union);}
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:3px solid var(--copper);
+    outline-offset:2px;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  img{max-width:100%;display:block;}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:40;
+    background:rgba(var(--paper-rgb),0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  [data-theme="dark"] header{background:rgba(23,21,18,0.9);}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);}
+  .brand img{height:46px;width:auto;object-fit:contain;flex:none;}
+  .brand-name{font-family:'Bitter',serif;font-weight:700;font-size:20px;line-height:1.1;}
+  .brand-sub{font-size:13px;color:var(--ink-soft);border-left:1px solid var(--line-strong);padding-left:14px;line-height:1.4;}
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;}
+  .nav-links a:hover{color:var(--copper);}
+  .nav-call{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--cta);color:#FAF6EC;
+    padding:10px 18px;border-radius:4px;font-weight:700;text-decoration:none;font-size:15px;
+    white-space:nowrap;
+  }
+  .nav-call:hover{background:var(--cta-dark);}
+  .menu-btn{display:none;background:none;border:1px solid var(--line-strong);border-radius:4px;padding:8px 10px;color:var(--ink);}
+  @media (max-width:840px){
+    .nav-links{display:none;}
+    .menu-btn{display:inline-flex;}
+  }
+  @media (max-width:520px){
+    .brand-sub{display:none;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding:64px 0 0;border-bottom:1px solid var(--line);}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;padding-bottom:56px;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;gap:36px;} .hero{padding-top:40px;} }
+  .hero h1{font-size:clamp(36px,5vw,58px);}
+  .hero h1 mark{
+    background:none;color:inherit;padding:0;position:relative;white-space:nowrap;
+  }
+  .hero h1 mark svg{position:absolute;left:-2%;bottom:-0.14em;width:104%;height:0.32em;color:var(--brass);z-index:-1;}
+  .hero-lede{margin-top:20px;font-size:19px;max-width:46ch;color:var(--ink-soft);}
+  .since-stamp{
+    display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+    width:80px;height:80px;border-radius:50%;border:1.5px dashed var(--line-strong);
+    padding:10px;box-sizing:border-box;
+    transform:rotate(-8deg);flex:none;margin-bottom:16px;color:var(--ink-soft);
+  }
+  .since-stamp b{font-family:'Bitter',serif;font-size:18px;color:var(--copper);line-height:1.1;}
+  .since-stamp span{font-size:11px;letter-spacing:0.07em;text-transform:uppercase;}
+  .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--panel);color:#F4F0E4;padding:15px 26px;border-radius:4px;
+    font-weight:700;font-size:16px;text-decoration:none;border:1px solid var(--panel);
+    display:inline-flex;align-items:center;gap:10px;min-height:44px;
+  }
+  .btn-primary:hover{background:var(--panel-dark);}
+  .btn-secondary{
+    background:transparent;color:var(--ink);padding:15px 26px;border-radius:4px;
+    font-weight:700;font-size:16px;text-decoration:none;border:1px solid var(--line-strong);
+    display:inline-flex;align-items:center;min-height:44px;
+  }
+  .btn-secondary:hover{border-color:var(--ink);}
+
+  .hero-plate{
+    position:relative;border-radius:10px;overflow:hidden;
+    box-shadow:0 18px 40px -20px rgba(30,27,22,0.45);
+  }
+  .hero-plate img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;}
+  .hero-tag{
+    position:absolute;left:0;bottom:0;right:0;
+    background:linear-gradient(to top, rgba(21,19,16,0.88) 0%, rgba(21,19,16,0.5) 60%, transparent 100%);
+    color:#F4F0E4;padding:60px 26px 22px;
+  }
+  .hero-tag b{display:block;font-family:'Bitter',serif;font-size:17px;margin-bottom:4px;}
+  .hero-tag span{font-size:13.5px;color:rgba(244,240,228,0.82);}
+  .hero-badge{
+    position:absolute;top:18px;right:18px;background:var(--brass);color:#2A2110;
+    font-family:'Bitter',serif;font-weight:700;font-size:13px;padding:8px 12px;
+    border-radius:3px;transform:rotate(3deg);
+  }
+
+  /* trust strip */
+  .trust{padding:26px 0;border-bottom:1px solid var(--line);}
+  .trust-row{display:flex;flex-wrap:wrap;}
+  .trust-item{
+    flex:1 1 200px;padding:6px 26px;border-left:1px solid var(--line);
+    font-size:14.5px;color:var(--ink-soft);
+  }
+  .trust-item:first-child{border-left:none;padding-left:0;}
+  .trust-item b{color:var(--ink);display:block;font-family:'Bitter',serif;font-size:16px;font-weight:700;}
+  @media (max-width:700px){ .trust-item{flex:1 1 45%;border-left:none;border-top:1px solid var(--line);padding:14px 0 0 0;margin-top:14px;} .trust-item:first-child{border-top:none;margin-top:0;padding-top:0;} }
+
+  /* ---------- section shell ---------- */
+  section{padding:76px 0;border-bottom:1px solid var(--line);}
+  .section-head{max-width:640px;margin-bottom:40px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,38px);}
+  .section-head p{margin-top:14px;color:var(--ink-soft);font-size:17px;}
+
+  /* services list */
+  .service-row{
+    display:grid;grid-template-columns:52px 1fr auto;gap:22px;align-items:start;
+    padding:26px 0;border-top:1px solid var(--line);
+  }
+  .service-list .service-row:last-child{border-bottom:1px solid var(--line);}
+  .service-icon{width:44px;height:44px;color:var(--copper);flex:none;}
+  .service-row h3{font-size:21px;margin-bottom:6px;}
+  .service-row p{margin:0;color:var(--ink-soft);font-size:15.5px;max-width:56ch;}
+  .service-tag{
+    align-self:center;font-size:13px;font-weight:700;color:var(--union);
+    border:1px solid var(--line-strong);border-radius:20px;padding:6px 14px;white-space:nowrap;
+  }
+  [data-theme="dark"] .service-tag{color:var(--union-dark);}
+  @media (max-width:640px){
+    .service-row{grid-template-columns:40px 1fr;}
+    .service-tag{grid-column:1 / -1;justify-self:start;}
+  }
+
+  /* story */
+  .story{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:start;}
+  @media (max-width:860px){ .story{grid-template-columns:1fr;} }
+  .story-photo{
+    position:relative;border-radius:10px;aspect-ratio:4/5;overflow:hidden;
+    box-shadow:0 18px 40px -22px rgba(30,27,22,0.4);
+  }
+  .story-photo img{width:100%;height:100%;object-fit:cover;}
+  .story-photo-cap{
+    position:absolute;left:0;right:0;bottom:0;padding:44px 22px 20px;
+    background:linear-gradient(to top, rgba(21,19,16,0.86) 0%, rgba(21,19,16,0.35) 65%, transparent 100%);
+    font-size:14px;color:rgba(244,240,228,0.85);
+  }
+  .story-photo-cap b{display:block;font-family:'Bitter',serif;font-size:19px;color:#F4F0E4;font-weight:700;}
+  blockquote{
+    margin:0 0 24px;padding-left:22px;border-left:3px solid var(--copper);
+    font-family:'Bitter',serif;font-style:italic;font-size:20px;line-height:1.5;color:var(--ink);
+  }
+  blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:14px;color:var(--ink-soft);font-weight:600;}
+  blockquote cite::before{content:"\2013\00A0";}
+  .story p.lead{font-size:17.5px;color:var(--ink-soft);margin:0 0 22px;}
+  .license-note{font-size:14px;color:var(--ink-soft);margin-top:18px;}
+
+  /* work gallery */
+  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:640px;padding:0 8px;}
+  @media (max-width:600px){ .work-grid{grid-template-columns:1fr;max-width:340px;} }
+  .work-item{
+    background:var(--paper);border:1px solid var(--line);border-radius:2px;
+    padding:10px 10px 0;box-shadow:0 10px 22px -14px rgba(30,27,22,0.35);
+    transition:transform 0.2s ease;
+  }
+  .work-item:nth-child(odd){transform:rotate(-1.6deg);}
+  .work-item:nth-child(even){transform:rotate(1.4deg);}
+  .work-item:hover{transform:rotate(0deg) translateY(-3px);}
+  .work-item img{aspect-ratio:1/1;object-fit:cover;width:100%;filter:sepia(0.06) contrast(1.02);}
+  .work-cap{padding:10px 4px 14px;font-size:14px;color:var(--ink-soft);font-family:'Bitter',serif;font-style:italic;}
+
+  /* reviews */
+  .review-lead{margin-bottom:30px;}
+  .review-lead p{
+    font-family:'Bitter',serif;font-style:italic;font-size:26px;line-height:1.45;
+    max-width:34ch;color:var(--ink);margin:14px 0 0;
+  }
+  .review-grid{columns:3 220px;column-gap:22px;}
+  @media (max-width:900px){ .review-grid{columns:1;} }
+  .review-card{
+    background:var(--paper-dim);border:1px solid var(--line);border-radius:2px;padding:24px;
+    display:flex;flex-direction:column;gap:16px;break-inside:avoid;margin-bottom:22px;
+  }
+  .review-card:nth-child(3n+1){transform:rotate(-0.5deg);}
+  .review-card:nth-child(3n+2){transform:rotate(0.4deg);}
+  .stars{color:var(--brass);letter-spacing:2px;font-size:15px;}
+  .review-card p{margin:0;font-size:15.5px;color:var(--ink);}
+  .review-who{font-size:13.5px;color:var(--ink-soft);font-weight:600;border-top:1px solid var(--line);padding-top:14px;}
+  .review-source{margin-top:36px;font-size:14px;color:var(--ink-soft);}
+
+  /* quote / contact */
+  .quote-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media (max-width:900px){ .quote-wrap{grid-template-columns:1fr;} }
+  .service-choice{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 26px;}
+  .chip{
+    border:1px solid var(--line-strong);background:transparent;color:var(--ink);
+    padding:11px 18px;border-radius:20px;font-size:14.5px;font-weight:600;cursor:pointer;min-height:44px;
+  }
+  .chip[aria-pressed="true"]{background:var(--panel);border-color:var(--panel);color:#F4F0E4;}
+  form{display:flex;flex-direction:column;gap:16px;}
+  label{font-size:14px;font-weight:700;color:var(--ink);}
+  .field{display:flex;flex-direction:column;gap:6px;}
+  input, textarea{
+    font-family:inherit;font-size:16px;padding:13px 14px;border-radius:5px;
+    border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);
+  }
+  textarea{resize:vertical;min-height:96px;}
+  .submit-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px;}
+  .form-note{font-size:13px;color:var(--ink-soft);}
+  .contact-card{background:var(--panel);color:#F4F0E4;border-radius:10px;padding:32px;}
+  .contact-card h3{font-family:'Bitter',serif;font-size:24px;margin-bottom:6px;}
+  .contact-phone{font-size:32px;font-weight:700;font-family:'Bitter',serif;color:var(--brass);text-decoration:none;display:inline-block;margin:14px 0;}
+  .contact-list{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:14.5px;border-top:1px solid rgba(244,240,228,0.25);padding-top:22px;}
+  .contact-list b{display:block;color:#F4F0E4;font-size:13px;text-transform:none;margin-bottom:2px;}
+  .contact-list span{color:rgba(244,240,228,0.8);}
+
+  /* footer */
+  footer{padding:44px 0 60px;}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-soft);}
+  .foot-grid a{color:var(--ink-soft);}
+  .pay-icons{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;}
+  .pay-icons span{border:1px solid var(--line-strong);border-radius:4px;padding:4px 9px;font-size:12px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="logo-new.png" alt="Letts Plumbing" width="216" height="92">
+      <span class="brand-sub">Concord, CA<br>Since 1966</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#story">Our story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get an estimate</a>
+    </nav>
+    <a class="nav-call" href="tel:19256871884">Call (925) 687-1884</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" style="border-bottom:none;padding-bottom:0;">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="since-stamp"><b>1966</b><span>Since</span></div>
+          <h1>Concord's plumbers for <mark>three generations<svg viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c30-9 60-9 90 0s60 9 90 0 30-9 36 0" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/></svg></mark> of the same families.</h1>
+          <p class="hero-lede">Don Letts started fixing pipes here in 1966. His grandson Shane runs the crew now. Same phone number, same six-person team, same rule: fix it right the first time.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="tel:19256871884">Call (925) 687-1884</a>
+            <a class="btn-secondary" href="#quote">Get a free estimate</a>
+          </div>
+        </div>
+        <div class="hero-plate">
+          <img src="tankless-navien.jpg" alt="A tankless water heater installed by the Letts Plumbing crew" width="300" height="400" fetchpriority="high">
+          <div class="hero-badge">4.8★ · 811 reviews</div>
+          <div class="hero-tag">
+            <b>Lic. #862842</b>
+            <span>Licensed &amp; insured, Concord, since 1966</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap trust-row">
+      <div class="trust-item"><b>Licensed &amp; insured</b>California C-36 #862842</div>
+      <div class="trust-item"><b>Locally owned</b>Run by the Letts family, based in Concord</div>
+      <div class="trust-item"><b>7 AM–5 PM daily</b>Plus emergency calls after hours</div>
+      <div class="trust-item"><b>Free estimates</b>No charge to come look and quote the job</div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we fix</h2>
+        <p>Water, gas, and sewer. Don's rule from day one was to handle all of it, not just the easy parts.</p>
+      </div>
+      <div class="service-list">
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h6l2-4 3 8 2-4h5"/></svg>
+          <div>
+            <h3>Repair</h3>
+            <p>Leaks, clogged drains, running toilets, low water pressure: the calls that can't wait. Most repair visits are done same-day.</p>
+          </div>
+          <span class="service-tag">Same-day</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M4 9h16"/></svg>
+          <div>
+            <h3>Installation &amp; replacement</h3>
+            <p>New fixtures, faucets, disposals, repiping and full remodel plumbing, installed to code and warrantied.</p>
+          </div>
+          <span class="service-tag">By quote</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg>
+          <div>
+            <h3>Water heaters, tank &amp; tankless</h3>
+            <p>Standard tank replacement or a tankless upgrade: we're a Navien and Noritz installer and can walk you through which one fits your house.</p>
+          </div>
+          <span class="service-tag">Navien · Noritz</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <div>
+            <h3>Drain &amp; sewer</h3>
+            <p>Snaking, hydro-jetting, and sewer line diagnosis when the problem is further down the line than a plunger can reach.</p>
+          </div>
+          <span class="service-tag">Rooter service</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          <div>
+            <h3>Plumbing inspection</h3>
+            <p>A full walkthrough before you buy a house, before a remodel, or just for peace of mind. Flat rate, no surprise add-ons.</p>
+          </div>
+          <span class="service-tag">$195/hr, 1 hr min</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+          <div>
+            <h3>Emergency service</h3>
+            <p>Burst pipe at 11 p.m.? We've answered that call before. Overtime rate is quoted upfront, no hidden fees.</p>
+          </div>
+          <span class="service-tag">After hours</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap story">
+      <div>
+        <div class="story-photo">
+          <img src="shower-trim.jpg" alt="A shower valve trim installed by the Letts Plumbing crew" width="300" height="400" loading="lazy" decoding="async">
+          <div class="story-photo-cap">
+            <b>One of six trucks</b>
+            Same rule on every call since 1966: fix it right the first time
+          </div>
+        </div>
+        <p class="license-note">Shane Letts is a member of the Clayton Valley Sunrise Rotary and lives in Concord with his wife and two kids. Letts Plumbing has six employees and has run on the same word-of-mouth reputation since 1966.</p>
+      </div>
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <h2>Started by an apprentice from England. Still run by his family.</h2>
+        </div>
+        <p class="lead">Don Letts trained as a plumber's apprentice in England for five years and ran his own company there before moving to California in 1966. He worked for other outfits for years before his grandson Shane showed real ability for the trade. That's when they started Letts Plumbing together.</p>
+        <blockquote>
+          "It is a great feeling to have the children and grandchildren of my original customers call us for their plumbing needs. Our advice and estimates are always free, just give us a call."
+          <cite>Don Letts, Founder</cite>
+        </blockquote>
+        <blockquote>
+          "I am proud to say that we are just carrying on a family tradition."
+          <cite>Shane Letts, President, in reply to a customer review</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Recent work around Concord</h2>
+        <p>A few jobs our crew has photographed on-site.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work-item"><img src="tankless-noritz.jpg" alt="Noritz tankless water heater unit installed against exterior wall" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Tankless install, Noritz</div></div>
+        <div class="work-item"><img src="water-heater.jpg" alt="Standard tank water heater with expansion tank and flue connection" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Tank swap with expansion tank</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What Concord says</h2>
+        <p>811 reviews on Yelp average 4.8 stars. These are a few, word for word.</p>
+      </div>
+
+      <div class="review-lead">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Shane gave us an education in defective pipes and saved the sale of our house. I would trust these guys with my kids; the Letts crew is the best in the business."</p>
+        <div class="review-who" style="border-top:none;padding-top:8px;">Michael S., Seattle, WA</div>
+      </div>
+
+      <div class="review-grid">
+
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Andy cut a hole in the sheetrock, had both hot and cold water lines installed and fitted in place by 10:30 a.m. My new washer arrived an hour later. You guys made my day."</p>
+          <div class="review-who">Betsy W., El Dorado Hills, CA</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"My garage started flooding during a rainstorm. I called Shane at 7:30 a.m. and he was here in 30 minutes, then drove out in the rain to buy a bigger pump himself."</p>
+          <div class="review-who">Chip D., Pleasant Hill, CA</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"He told us the flat fee upfront: no show-up fee, no part fee, no paperwork fee. Steven and his helper were courteous, fast, and explained how to prevent it happening again."</p>
+          <div class="review-who">Jay S., Roseville, CA</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+          <p>"Steve talked me through every possible scenario over the phone, even ways to save money if it wasn't a plumbing problem. When we did need him, he was at our door in ten minutes."</p>
+          <div class="review-who">Delilah K., Danville, CA</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Sheldon diagnosed the faulty thermocouple, came out at a time that worked for me, and we had hot water again the same day. Affordably priced, prompt, and professional."</p>
+          <div class="review-who">Adrienne R., Kailua, HI</div>
+        </div>
+
+      </div>
+      <p class="review-source">Source: <a href="https://www.yelp.com/biz/letts-plumbing-concord" target="_blank" rel="noopener">Letts Plumbing on Yelp</a>, 811 reviews, 4.8 average as of this writing.</p>
+    </div>
+  </section>
+
+  <section id="quote" style="border-bottom:none;">
+    <div class="wrap quote-wrap">
+      <div>
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Get a free estimate</h2>
+          <p>Tell us what's going on and where you're located, and we'll call you back to schedule.</p>
+        </div>
+
+        <form onsubmit="return false;">
+          <fieldset style="border:none;padding:0;margin:0;">
+            <legend style="font-size:14px;font-weight:700;margin-bottom:0;">What do you need?</legend>
+            <div class="service-choice" role="group" aria-label="Service needed">
+              <button type="button" class="chip" aria-pressed="true">Repair</button>
+              <button type="button" class="chip" aria-pressed="false">Installation</button>
+              <button type="button" class="chip" aria-pressed="false">Inspection</button>
+              <button type="button" class="chip" aria-pressed="false">Emergency</button>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="address">Address or neighborhood</label>
+            <input id="address" name="address" type="text" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="details">What's going on?</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn-primary" style="border:none;">Request a callback</button>
+            <span class="form-note">We usually respond within a couple hours during business days.</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-card">
+        <h3>Or just call</h3>
+        <p style="color:rgba(244,240,228,0.85);margin:0;">Most people get through to a real person, not a menu.</p>
+        <a class="contact-phone" href="tel:19256871884">(925) 687-1884</a>
+        <ul class="contact-list">
+          <li><b>Hours</b><span>7:00 AM – 5:00 PM, every day. Emergency calls taken after hours.</span></li>
+          <li><b>Service area</b><span>Concord and the surrounding Contra Costa cities: Walnut Creek, Pleasant Hill, Clayton, Martinez, Lafayette, Danville.</span></li>
+          <li><b>License</b><span>California C-36 Plumbing Contractor #862842</span></li>
+          <li><b>Payment</b><span>Cash, check, credit card, Zelle, or Venmo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand-name" style="font-family:'Bitter',serif;font-weight:700;">Letts Plumbing</div>
+      <div style="margin-top:6px;">Concord, CA 94521 · Serving Concord and the surrounding area</div>
+      <div class="pay-icons">
+        <span>Credit cards</span><span>Zelle</span><span>Venmo</span><span>ASL proficient</span>
+      </div>
+    </div>
+    <div>
+      <div><a href="tel:19256871884">(925) 687-1884</a></div>
+      <div style="margin-top:6px;">7:00 AM – 5:00 PM daily</div>
+      <div style="margin-top:6px;">CA License #862842</div>
+      <div style="margin-top:14px;">© 1966–2026 Letts Plumbing. A family business, three generations running.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      document.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+    });
+  });
+</script>
+
+</body>
+</html>

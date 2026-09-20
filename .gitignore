@@ -1,0 +1,19 @@
+# Playwright MCP logs and snapshots
+.playwright-mcp/
+
+# Impeccable tool cache and live server state
+.impeccable/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies and env (in case they're added later)
+node_modules/
+.env
+.env.*
