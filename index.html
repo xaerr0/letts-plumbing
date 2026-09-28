@@ -215,7 +215,8 @@
   .license-note{font-size:14px;color:var(--ink-soft);margin-top:18px;}
 
   /* work gallery */
-  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:640px;padding:0 8px;}
+  .work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;max-width:1000px;margin:0 auto;padding:0 8px;}
+  @media (max-width:820px){ .work-grid{grid-template-columns:repeat(2,1fr);max-width:640px;} }
   @media (max-width:600px){ .work-grid{grid-template-columns:1fr;max-width:340px;} }
   .work-item{
     background:var(--paper);border:1px solid var(--line);border-radius:2px;
@@ -305,7 +306,7 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <div class="since-stamp"><b>1966</b><span>Since</span></div>
+          <div class="since-stamp"><span>Since</span><b>1966</b></div>
           <h1>Concord's plumbers for <mark>three generations<svg viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9c30-9 60-9 90 0s60 9 90 0 30-9 36 0" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/></svg></mark> of the same families.</h1>
           <p class="hero-lede">Don Letts started fixing pipes here in 1966. His grandson Shane runs the crew now. Same phone number, same six-person team, same rule: fix it right the first time.</p>
           <div class="hero-ctas">
@@ -314,7 +315,8 @@
           </div>
         </div>
         <div class="hero-plate">
-          <img src="tankless-navien.jpg" alt="A tankless water heater installed by the Letts Plumbing crew" width="300" height="400" fetchpriority="high">
+          <!-- TEMP: stock photo placeholder (Pexels, free license), swap for a real photo of Shane/the crew or a truck when available -->
+          <img src="hero-stock-placeholder.jpg" alt="A plumber installing a pipe fitting on a heating unit" width="300" height="400" fetchpriority="high">
           <div class="hero-badge">4.8★ · 811 reviews</div>
           <div class="hero-tag">
             <b>Lic. #862842</b>
@@ -404,9 +406,10 @@
     <div class="wrap story">
       <div>
         <div class="story-photo">
-          <img src="shower-trim.jpg" alt="A shower valve trim installed by the Letts Plumbing crew" width="300" height="400" loading="lazy" decoding="async">
+          <!-- TEMP: stock photo placeholder, swap for a real photo of Shane/the crew or a truck when available -->
+          <img src="story-stock-placeholder.jpg" alt="A plumber's hands connecting a supply line fitting under a sink" width="300" height="400" loading="lazy" decoding="async">
           <div class="story-photo-cap">
-            <b>One of six trucks</b>
+            <b>Same hands-on standard</b>
             Same rule on every call since 1966: fix it right the first time
           </div>
         </div>
@@ -438,6 +441,8 @@
       <div class="work-grid">
         <div class="work-item"><img src="tankless-noritz.jpg" alt="Noritz tankless water heater unit installed against exterior wall" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Tankless install, Noritz</div></div>
         <div class="work-item"><img src="water-heater.jpg" alt="Standard tank water heater with expansion tank and flue connection" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Tank swap with expansion tank</div></div>
+        <div class="work-item"><img src="tankless-navien.jpg" alt="Navien tankless water heater installed against exterior wall" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Tankless install, Navien</div></div>
+        <div class="work-item"><img src="shower-trim.jpg" alt="Shower valve trim and handle finished in brushed brass" width="300" height="400" loading="lazy" decoding="async"><div class="work-cap">Shower valve trim, finish work</div></div>
       </div>
     </div>
   </section>
